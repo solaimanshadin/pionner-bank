@@ -82,7 +82,7 @@
         //Authentication Function
 
         function authentication(email, password){
-            const myEmail = "admin@gmail.com";
+            const myEmail = "admin@gmail.com"
             const myPassword = "1234";
             if(email == myEmail && password == myPassword){
                 loginForm.style.display = "none";
@@ -113,7 +113,7 @@
             const withdrawNumber = getInputNumber("withdrawAmount");
             updateSpanText("currentWithdraw" ,withdrawNumber);
             updateSpanText("currentBalance" , withdrawNumber * -1);
-            document.getElementById("currentBalance").value = ""
+            document.getElementById("withdrawAmount").value = ""
         })
 
         function getInputNumber(id){
